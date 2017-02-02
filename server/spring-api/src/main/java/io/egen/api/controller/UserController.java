@@ -55,7 +55,7 @@ public class UserController {
 	public User updateUserDetail(HttpServletRequest request, @RequestBody User updateuserdetails) {
 		HttpSession session = request.getSession(true);
 		User loggedUser = (User) session.getAttribute(SessionVariables.SESSION_USER_ENTITY);
-		if (null == loggedUser || !(loggedUser.getId().equals(updateuserdetails.getId())))
+		if ((null == loggedUser) || !(loggedUser.getUsername().equals(updateuserdetails.getUsername())))
 			throw new LoginException("Please login first");
 		User userEntity = service.updateUserInformation(loggedUser, updateuserdetails);
 		session.setAttribute(SessionVariables.SESSION_USER_ENTITY, userEntity);
