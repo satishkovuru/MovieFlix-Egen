@@ -1,5 +1,6 @@
 # movieflix-seed
-seed for the Full-Stack training project: movieflix
+Created REST API using Spring MVC. Handled AJAX calls in AngularJs. Client side login and signup validation using AngularJs.
+Created a single page application called Movieflix as a part of training .Created Responsive Web Design using HTML5, CSS3 and Bootstrap. 
 
 ## directory structure:
 
